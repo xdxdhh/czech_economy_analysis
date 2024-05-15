@@ -1,0 +1,129 @@
+﻿{
+  "@context": ["http://www.w3.org/ns/csvw",{"@language": "cs"}],
+  "url": "030030-24data051024.zip",
+  "tableSchema": {
+    "columns": [{
+      "name": "idhod",
+      "titles": "idhod",
+      "dc:description":"unikátní identifikátor údaje Veřejné databáze ČSÚ",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "hodnota",
+      "titles": "hodnota",
+      "dc:description":"zjištěná hodnota,v případě, že se jedná o důvěrný údaj, je sloupec prázdný",
+      "required": true,
+      "datatype": "number"
+    }, {
+      "name": "stapro_kod",
+      "titles": "stapro_kod",
+      "dc:description":"kód statistické proměnné ze systému SMS UKAZ",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "casz_cis",
+      "titles": "casz_cis",
+      "dc:description":"kód číselníku pro základní období (typ indexu)",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "casz_kod",
+      "titles": "casz_kod",
+      "dc:description":"kód číselníku pro základní období (typ indexu)",
+      "required": true,
+      "datatype": "string"
+    }, {
+      "name": "cznace_cis",
+      "titles": "cznace_cis",
+      "dc:description":"kód číselníku odvětví",
+      "required": true,
+      "datatype": "string"
+    },   {
+      "name": "cznace_kod",
+      "titles": "cznace_kod",
+      "dc:description":"kód položky z číselníku odvětví",
+      "required": true,
+      "datatype": "string"
+    },  {
+      "name": "oceneni_cis",
+      "titles": "oceneni_cis",
+      "dc:description":"kód číselníku ocenění",
+      "required": true,
+      "datatype": "string"
+    },  {
+      "name": "oceneni_kod",
+      "titles": "oceneni_kod",
+      "dc:description":"kód položky z číselníku ocenění",
+      "required": true,
+      "datatype": "string"
+    },    {
+      "name": "ocisteni_cis",
+      "titles": "ocisteni_cis",
+      "dc:description":"kód číselníku metody očištění",
+      "required": true,
+      "datatype": "string"
+    },    {
+      "name": "ocisteni_kod",
+      "titles": "ocisteni_kod",
+      "dc:description":"kód položky z číselníku metody očištění",
+      "required": true,
+      "datatype": "string"
+    },  {
+      "name": "mesic",
+      "titles": "mesic",
+      "dc:description":"měsíc (součást referenčního období)",
+      "required": true,
+      "datatype": "number"
+    }, {
+      "name": "rok",
+      "titles": "rok",
+      "dc:description":"rok (součást referenčního období) - ve formátu RRRR",
+      "required": true,
+      "datatype": "number"
+    },   {
+      "name": "mesicz",
+      "titles": "mesicz",
+      "dc:description":"měsíc  (součást bazického období)",
+      "required": true,
+      "datatype": "number"
+    }, {
+      "name": "rokz",
+      "titles": "rokz",
+      "dc:description":"rok (součást bazického období) - ve formátu RRRR",
+      "required": true,
+      "datatype": "number"
+    }, {
+      "name": "stapro_txt",
+      "titles": "stapro_txt",
+      "dc:description":"text statistické proměnné",
+      "required": true,
+      "datatype": "string"
+    },  {
+      "name": "casz_txt",
+      "titles": "casz_txt",
+      "dc:description":"text položky číselníku pro základní období (typ indexu)",
+      "required": true,
+      "datatype": "string"
+    },  {
+      "name": "cznace_txt",
+      "titles": "cznace_txt",
+      "dc:description":"text položky číselníku pro odvětví",
+      "required": true,
+      "datatype": "string"
+    },  {
+      "name": "oceneni_txt",
+      "titles": "oceneni_txt",
+      "dc:description":"text položky číselníku pro ocenění",
+      "required": true,
+      "datatype": "string"
+    },   {
+      "name": "ocisteni_txt",
+      "titles": "ocisteni_txt",
+      "dc:description":"text položky číselníku pro očištění",
+      "required": true,
+      "datatype": "string"
+    }
+    ],
+    "primaryKey": "idhod"
+  }
+}
